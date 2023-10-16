@@ -1,150 +1,235 @@
-body{
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    background-color: #FFFFFF ;
-    color: #434455;
-    }
-    /* +++++++++++++++++  For general use   +++++++++++++++++++++++++*/
-    .head-two{
-        color: #2E2F42;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        text-transform: capitalize;
-    }
-    .head-three{
-        color: #2E2F42;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-    .descripsion{
-        color: #434455;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-    /* ==================  End For general use  =====================*/
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #434455;
+}
+/*++++++++++++  Reset dofault settings  ++++++++++++++++++++++++++++++*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+/*============  End Reset dofault settings   =============================*/
 
+/* +++++++++++++++++  For general use   +++++++++++++++++++++++++*/
+.head-two {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.head-three {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.descripsion {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
-    /* +++++++++++++++++++  Header  ++++++++++++++++++++++++++++++++ */
-    .page-header{
-        background: #FFFFFF;
-    }
-    .logo{
-        color: #4d5ae5;
-        font-family: Raleway, sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    }
-    .logo:focus,
-    .logo:hover{
-        color: #404BBF;
-    }
-   
-    .logo-header-spn{
-        color: #2e2f42;
-    }
+.container {
+  width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  align-self: center;
+  display: flex;
+}
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+/* ==================  End For general use  =====================*/
 
-    .nav-links{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        color: #2E2F42;
-        letter-spacing: 0.02em;
-    }
-    .nav-links:hover,
-    .nav-links:focus{
-        color: #404BBF;
-    }
-    .addr{
-        font-style: normal;
-    }
-    .contacts{
-        color: #434455;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-    .contacts:focus,
-    .contacts:hover{
-        color: #404BBF;
-    }
-    /* ==============   End Header  ============================= */
+/* +++++++++++++++++++  Header  ++++++++++++++++++++++++++++++++ */
+.page-header {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.top-line-header {
+  flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
+}
+.navigation {
+  width: 1440px;
+  flex-shrink: 0;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo:focus,
+.logo:hover {
+  color: #404bbf;
+}
 
-    /* +++++++++++++++++++  Hero  ++++++++++++++++++++++++++++++++ */
-    .hero{
-        background: #2E2F42;
-    }
-    .hero-title{
-        color: #FFFFFF;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        text-align: center;
-        letter-spacing: 0.02em;
-    }
-    .btn{
+.logo-header-spn {
+  color: #2e2f42;
+}
+.nav-bar {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 24;
+  margin-right: 832;
+  margin-bottom: 24;
+  margin-left: 347;
+}
+.nav-links {
+  padding: calc();
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+}
+.nav-links:hover,
+.nav-links:focus {
+  color: #404bbf;
+}
+.addr {
+  font-style: normal;
+}
+.contacts {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contacts:focus,
+.contacts:hover {
+  color: #404bbf;
+}
+/* ==============   End Header  ============================= */
 
-        background: #4D5AE5;
-        cursor: pointer;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #ffffff;
-    }
+/* +++++++++++++++++++  Hero  ++++++++++++++++++++++++++++++++ */
+.hero {
+  background: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.btn {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
 
-    .btn:focus{
-        background: #404BBF;
-    }
+  border-radius: 4px;
+  background: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 
-    .btn:hover{
-        background: #404BBF;
-    }
-    /* ==============   End Hero  ============================= */
+.btn:focus {
+  background: #404bbf;
+}
 
+.btn:hover {
+  background: #404bbf;
+}
+/* ==============   End Hero  ============================= */
 
-    /* ++++++++++++++   About Us  ++++++++++++++++++++++++++++++++ */
-    .about-as{
-        background-color: #F4F4FD;
-    }       
-    /* =======   End About Us   ================================== */       
+/* ++++++++++++++   About Us  ++++++++++++++++++++++++++++++++ */
+.about-as {
+  background-color: #f4f4fd;
+}
+/* =======   End About Us   ================================== */
 
+/* +++++++++++++++   Our Team   ++++++++++++++++++++++++++++++ */
 
-    /* +++++++++++++++   Our Team   ++++++++++++++++++++++++++++++ */
+.our-team {
+  background-color: #f4f4fd;
+}
+.image-box {
+  background: #ffffff;
+}
+/* ==========  End Our Team  =============================== */
 
-    .our-team{
-        background-color: #F4F4FD;
-    }
-    .image-box{
-        background:  #FFFFFF;
-    }
-    /* ==========  End Our Team  =============================== */
+/* ++++++++++++Our Portfolio++++++++++++++++++++++++++++++++ */
+.card-content {
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  background: #ffffff;
+}
+/* ============End Our Portfolio=========================== */
 
-    /* +++++++++++   Footer   +++++++++++++++++++++++++++++ */
-    
-    .page-footer{
-        background: #2E2F42;
-    }
-    .footer-description{
-        color: #F4F4FD;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-    .logo-footer-spn{
-        color: #f4f4fd;
-    }
-    /* ============   End Footer   =============================== */
+/* +++++++++++   Footer   +++++++++++++++++++++++++++++ */
+
+.page-footer {
+  background: #2e2f42;
+}
+.footer-description {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.logo-footer-spn {
+  color: #f4f4fd;
+}
+/* ============   End Footer   =============================== */
