@@ -63,10 +63,9 @@ button {
 
 .container {
   width: 1158px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   box-sizing: border-box;
   align-self: center;
   display: flex;
@@ -84,6 +83,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .top-line-header {
   flex-shrink: 0;
@@ -93,11 +93,14 @@ button {
 .navigation {
   width: 1440px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 .logo {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
+  margin-right: 76px;
 
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -116,7 +119,7 @@ button {
   color: #2e2f42;
 }
 .nav-bar {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   gap: 40px;
   margin-top: 24;
@@ -131,6 +134,8 @@ button {
   line-height: 1.5;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-links:hover,
 .nav-links:focus {
@@ -138,6 +143,10 @@ button {
 }
 .addr {
   font-style: normal;
+}
+.addr-list {
+  display: flex;
+  gap: 40px;
 }
 .contacts {
   color: #434455;
@@ -158,6 +167,8 @@ button {
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   color: #ffffff;
@@ -166,12 +177,17 @@ button {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 .btn {
   display: inline-flex;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 
   border-radius: 4px;
   background: #4d5ae5;
@@ -196,6 +212,19 @@ button {
 .about-as {
   background-color: #f4f4fd;
 }
+.about-as-list {
+  display: flex;
+  gap: 24px;
+}
+.about-list-elements {
+  width: calc((100% - 72px) / 4);
+}
+.heder-two-hidden {
+  visibility: hidden;
+}
+.heder-three-about {
+  margin-bottom: 8px;
+}
 /* =======   End About Us   ================================== */
 
 /* +++++++++++++++   Our Team   ++++++++++++++++++++++++++++++ */
@@ -205,6 +234,26 @@ button {
 }
 .image-box {
   background: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.heder-two-team {
+  margin-bottom: 72px;
+}
+.our-team-list {
+  display: flex;
+  gap: 24px;
+}
+.name-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.heder-thee-team {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.description-teams {
+  text-align: center;
 }
 /* ==========  End Our Team  =============================== */
 
@@ -214,6 +263,22 @@ button {
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   background: #ffffff;
+  padding: 32px 16px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.our-portfolio-items {
+  width: calc((100% - 48px) / 3);
+}
+.heder-two-portf {
+  margin-bottom: 72px;
+}
+.heder-three-portf {
+  margin-bottom: 8px;
 }
 /* ============End Our Portfolio=========================== */
 
@@ -221,6 +286,8 @@ button {
 
 .page-footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-description {
   color: #f4f4fd;
@@ -231,5 +298,9 @@ button {
 }
 .logo-footer-spn {
   color: #f4f4fd;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* ============   End Footer   =============================== */
