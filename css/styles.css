@@ -82,7 +82,9 @@ button {
   flex-shrink: 0;
   border-bottom: 1px solid #e7e9fc;
 }
-
+.container-header-flex {
+  display: flex;
+}
 .navigation {
   display: flex;
   align-items: center;
