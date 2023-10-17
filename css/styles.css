@@ -19,9 +19,8 @@ p {
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -68,7 +67,6 @@ button {
   margin: 0 auto;
   box-sizing: border-box;
   align-self: center;
-  display: flex;
 }
 .section {
   padding-bottom: 120px;
@@ -113,6 +111,7 @@ button {
 }
 .nav-bar {
   display: flex;
+  align-items: flex-start;
   gap: 40px;
 }
 .nav-links {
@@ -130,6 +129,7 @@ button {
 }
 .addr {
   font-style: normal;
+  margin-left: auto;
 }
 .addr-list {
   display: flex;
@@ -151,7 +151,9 @@ button {
 /* +++++++++++++++++++  Hero  ++++++++++++++++++++++++++++++++ */
 .hero {
   background: #2e2f42;
+  display: flex;
   flex-shrink: 0;
+  justify-content: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -163,13 +165,17 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   max-width: 496px;
+  margin: 0 auto;
 }
 .btn {
+  padding: 16px 32px;
   display: inline-flex;
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
+  margin: 0 auto;
+  gap: 10px;
 
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -201,8 +207,17 @@ button {
 .about-list-elements {
   width: calc((100% - 3 * 24px) / 4);
 }
-.heder-two-hidden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .heder-three-about {
   margin-bottom: 8px;
@@ -241,8 +256,8 @@ button {
 
 /* ++++++++++++Our Portfolio++++++++++++++++++++++++++++++++ */
 .card-content {
-  border-top: none;
   border: 1px solid #e7e9fc;
+  border-top: none;
   background: #ffffff;
   padding: 32px 16px;
 }
