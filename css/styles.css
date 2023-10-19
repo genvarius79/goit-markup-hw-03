@@ -33,6 +33,7 @@ button {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 /*============  End Reset dofault settings   =============================*/
 
@@ -138,6 +139,8 @@ button {
   gap: 40px;
 }
 .contacts {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #434455;
   font-size: 16px;
   font-weight: 400;
@@ -167,7 +170,10 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
 }
 .btn {
   padding: 16px 32px;
@@ -199,9 +205,7 @@ button {
 /* ==============   End Hero  ============================= */
 
 /* ++++++++++++++   About Us  ++++++++++++++++++++++++++++++++ */
-.about-as {
-  background-color: #f4f4fd;
-}
+
 .about-as-list {
   display: flex;
   gap: 24px;
